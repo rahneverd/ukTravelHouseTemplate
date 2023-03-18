@@ -11,7 +11,7 @@ html {
 /* Main Container */
 .main {
 	min-height: 100vh;
-	min-width: 100vw;
+	min-width: 100%;
 }
 /* Header Section */
 .header-section {
@@ -123,7 +123,84 @@ html {
 	height: 100%;
 	background-color: #605dec;
 	color: #fff;
+	font-size: 1.8rem;
+	font-weight: 400;
+	line-height: 2.455rem;
 	border: none;
 	border-top-right-radius: 0.5rem;
 	border-bottom-right-radius: 0.5rem;
+}
+/* Top Destinations Section */
+.top-destinations-section {
+	padding: 2rem 7rem;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.tds-header {
+	width: 100%;
+	height: 7.3rem;
+	padding: 2rem 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.tds-header-heading {
+}
+.tds-header-heading h2 {
+	font-weight: 700;
+	font-size: 2.4rem;
+	line-height: 3.274rem;
+	color: #6e7491;
+}
+.tds-header-all {
+}
+.tds-header-all-button {
+	border: none;
+	background-color: rgba(255, 255, 255, 0);
+	color: #a1b0cc;
+	font-weight: 400;
+	font-size: 2.4rem;
+	line-height: 3.274rem;
+}
+.tds-archive {
+	padding: 5rem 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 55rem;
+	box-shadow: 0 1.2rem 0.5 3.2rem rgb(28, 5, 77);
+}
+.tds-archive-single {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 30%;
+	height: 100%;
+	border-collapse: separate;
+
+	border-radius: 50px;
+}
+.tds-archive-single-img {
+	height: 39.7rem;
+	width: 100%;
+}
+.tds-archive-single-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+	object-position: center center;
+}
+.tds-archive-single-data {
+	width: 100%;
+	height: 8.3rem;
+	padding: 0 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: space-evenly;
 }
