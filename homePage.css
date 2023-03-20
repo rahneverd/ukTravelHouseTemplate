@@ -2,72 +2,84 @@ html {
 	font-size: 62.5%; /* Setting 1rem = 10px */
 	font-family: 'Nunito Sans';
 }
-.logo {
+#header-section .logo {
 	width: 250px;
-	height: 110px;
+	height: 118px;
 }
-
-.search-section {
-	/* padding: 2rem 10rem; */
-	height: 70rem;
-	/* display: flex; */
-	/* flex-direction: column; */
-	/* align-items: center; */
-	/* justify-content: space-evenly; */
+#search-section {
 	background-image: url('world-map.png');
 }
-.search-section-heading {
-	width: 75.6rem;
+
+#search-section .ss-container {
+	min-height: 700px;
 }
-.ssh-h2 {
+#search-section .search-section-heading {
+	max-width: 75.6rem;
+}
+#search-section .ssh-h2 {
 	font-weight: 800;
-	font-size: 9.6rem;
-	line-height: 12.6rem;
-	text-align: center;
+	font-size: 4rem;
+	line-height: 5rem;
 	background: -webkit-radial-gradient(#71bbfd, #8c41fd);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
-.s-form {
-	height: 4.8;
+
+@media only screen and (min-width: 769px) {
+	#search-section .ssh-h2 {
+		font-size: 9.6rem;
+		line-height: 12.6rem;
+	}
 }
-.ssf-input-div {
+
+#search-section .s-form {
+	min-height: 4.8rem;
+}
+#search-section .ssf-input-div {
 	height: 100%;
+	width: 100%;
 	padding: 0.5rem 0.5rem;
 	border: 1px solid #cbd4e6;
 }
-.ssf-input-div:first-child {
-	border-top-left-radius: 0.5rem;
-	border-bottom-left-radius: 0.5rem;
-}
-.ssf-input-input {
+#search-section .ssf-input-input {
 	height: 100%;
 	width: 80%;
-	/* padding-left: 0.5rem; */
 	border: none;
 	background-color: rgba(255, 255, 255, 0);
 	color: #7c8db0;
-	font-size: 18px;
+	font-size: 1.8rem;
 	line-height: 2.5rem;
 	font-weight: 400;
 }
-.ssf-input-input:focus-visible {
+#search-section .ssf-input-input:focus-visible {
 	border: none;
 	outline: none;
 }
-.ssf-button-div {
-	display: inline-block;
-	width: 10%;
-}
-.ssf-button-button {
+#search-section .ssf-button-div {
 	width: 100%;
-	height: 100%;
+	height: 4.8rem;
+}
+#search-section .ssf-button-button {
+	width: 100%;
+	height: 4.8rem;
 	background-color: #605dec;
 	color: #fff;
 	font-size: 1.8rem;
 	font-weight: 400;
 	line-height: 2.455rem;
 	border: none;
-	border-top-right-radius: 0.5rem;
-	border-bottom-right-radius: 0.5rem;
+}
+#top-destinations-section .tds-header-heading h2 {
+	font-weight: 700;
+	font-size: 2.4rem;
+	line-height: 3.274rem;
+	color: #6e7491;
+}
+#top-destinations-section .tds-header-all-button {
+	border: none;
+	background-color: rgba(255, 255, 255, 0);
+	color: #a1b0cc;
+	font-weight: 400;
+	font-size: 2.4rem;
+	line-height: 3.274rem;
 }
