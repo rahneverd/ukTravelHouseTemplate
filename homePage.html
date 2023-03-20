@@ -8,17 +8,86 @@
 			href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;800&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+			crossorigin="anonymous"
+		/>
 		<link rel="stylesheet" href="homePage.css" />
 		<title>Document</title>
 	</head>
 	<body>
-		<div class="main">
-			<!-- Header Section -->
-			<section class="header-section">
-				<div class="header-section-logo">
-					<img src="" alt="" />
+		<div class="container-fluid px-0">
+			<!-- <nav class="navbar bg-body-tertiary">
+				<div class="container-fluid">
+					<img src="logo.png" alt="" />
+					<ul class="navbar-nav">
+						<li class="nav-item">Flights</li>
+						<li class="nav-item">Hotels</li>
+						<li class="nav-item">Packages</li>
+						<li class="nav-item">Sign in</li>
+					</ul>
 				</div>
-				<div class="header-section-nav">
+			</nav> -->
+			<!-- Header Section -->
+
+			<nav class="navbar navbar-expand-lg">
+				<div class="container">
+					<a class="navbar-brand" href="#">
+						<img src="logo-removebg-preview.png" alt="" class="logo" />
+					</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="#">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Link</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="#">Disabled</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+			<!-- <section class="container">
+				<header
+					class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
+				>
+					<a
+						href="#"
+						class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none"
+					>
+						<img src="departure.png" alt="" />
+					</a>
+
+					<ul class="nav nav-pills">
+						<li class="nav-item"><a href="" class="nav-item">Flights</a></li>
+						<li class="nav-item"><a href="" class="nav-item">Flights</a></li>
+						<li class="nav-item"><a href="" class="nav-item">Flights</a></li>
+						<li class="nav-item"><a href="" class="nav-item">Flights</a></li>
+					</ul>
+				</header>
+			</section> -->
+			<!-- <div class="col-6">
+					<img src="logo.png" alt="" />
+				</div>
+				<div class="col-6">
 					<ul class="nav">
 						<li class="nav-item">Flights</li>
 						<li class="nav-item">Hotels</li>
@@ -26,9 +95,64 @@
 						<li class="nav-item">Sign in</li>
 					</ul>
 				</div>
-			</section>
+			</section> -->
 			<!-- Search Section -->
-			<section class="search-section">
+
+			<section
+				class="bg-image search-section d-flex flex-column justify-content-evenly align-items-center"
+			>
+				<div
+					class="search-section-heading d-flex align-items-center justify-content-center"
+				>
+					<h2 class="ssh-h2">It's more than just a trip</h2>
+				</div>
+				<form
+					action=""
+					class="d-flex flex-lg-row flex-column align-items-center s-form"
+				>
+					<div class="ssf-input-div">
+						<img src="departure.png" alt="" class="ssf-input-icon" />
+						<input
+							type="text"
+							class="ssf-input-input"
+							placeholder="Where From?"
+						/>
+					</div>
+					<div class="ssf-input-div">
+						<img src="departure.png" alt="" class="ssf-input-icon" />
+						<input
+							type="text"
+							class="ssf-input-input"
+							placeholder="Where To?"
+						/>
+					</div>
+					<div class="ssf-input-div">
+						<img src="departure.png" alt="" class="ssf-input-icon" />
+						<input
+							type="text"
+							class="ssf-input-input"
+							placeholder="Departure Date?"
+						/>
+					</div>
+					<div class="ssf-input-div">
+						<img src="departure.png" alt="" class="ssf-input-icon" />
+						<input
+							type="text"
+							class="ssf-input-input"
+							placeholder="Return Date?"
+						/>
+					</div>
+					<div class="ssf-input-div">
+						<img src="departure.png" alt="" class="ssf-input-icon" />
+						<input type="text" class="ssf-input-input" placeholder="Adults?" />
+					</div>
+					<div class="ssf-button-div">
+						<button class="ssf-button-button">Search</button>
+					</div>
+				</form>
+			</section>
+
+			<!-- <section class="search-section">
 				<div class="search-section-heading">
 					<h2 class="ssh-h2">It's more than just a trip</h2>
 				</div>
@@ -79,7 +203,7 @@
 						</div>
 					</div>
 				</form>
-			</section>
+			</section> -->
 			<!-- Top Destinations Section -->
 			<section class="top-destinations-section">
 				<div class="tds-header">
@@ -124,5 +248,10 @@
 				</div>
 			</section>
 		</div>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+			crossorigin="anonymous"
+		></script>
 	</body>
 </html>
